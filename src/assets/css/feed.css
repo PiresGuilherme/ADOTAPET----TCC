@@ -1,0 +1,356 @@
+* {
+    display: 0;
+}
+
+
+.container-insta {
+    width: 85%;
+    /* padding-left: 20px; */
+    margin-top: 100px;
+
+}
+
+/* filtros */
+.filtros {
+    background-image: linear-gradient(100deg, #f9fafb, transparent);
+    border-radius: 10%;
+    height: auto;
+    width: 280px;
+    position: absolute;
+    top: 160px;
+    right: 0px;
+    padding:20px 0px 15px 30px;
+    margin-right: 80px;
+}
+
+
+
+
+
+
+
+.mainmenubtn {
+    /* background-color: skyblue; */
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.mainmenubtn:checked {
+    background-color: blue;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-child {
+    display: none;
+    background-color: #fff;
+    min-width: 200px;
+}
+
+.dropdown-child a {
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:checked .dropdown-child {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* post*/
+
+.feed {
+    padding-left: 25%;
+    width: 75%;
+}
+
+
+
+
+
+.card-post .card-header {
+    display: flex;
+    align-items: center;
+    height: 60px
+}
+
+.card-post .card-header {
+    background-color: #fff;
+    border: 1px solid #eee;
+    max-height: 100px;
+}
+
+.card-post .card-header span {
+    padding-left: 10px;
+    font-weight: 600
+}
+
+.card-post .card-footer {
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+
+.card-post .post-usericon {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50%;
+}
+
+
+.card-post .post-image {
+    height: 500px;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+}
+
+.publication {
+    /* width: 360px; */
+    height: 500px;
+    width: 100%;
+}
+
+
+/*post action buttoms*/
+
+.card-post .actionButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%
+}
+
+.card-post .actionButtons .item {
+    font-weight: 300;
+    font-size: 18pt;
+    display: block;
+    flex-direction: unset;
+}
+
+.card-post .actionButtons .item+.item {
+    padding-left: 15px
+}
+
+.post-comments .comment .user {
+    font-weight: 900;
+    padding-right: 3px
+}
+
+.post-comments .comment .text {
+    font-weight: 500px;
+}
+
+.card-footer .text-bold {
+    padding-top: 10px;
+}
+
+
+
+/* perfil Pet */
+
+.informacoes {
+    padding: 30px 0px 0px 50px;
+
+}
+
+/* .pet-perfil {
+    padding: 30px;
+    display: block;
+} */
+
+
+.foto {
+    /* align-self: flex-end; */
+    height: 315px;
+    width: 300px;
+    border: 0.3px solid #eee;
+    padding: 10px;
+    float: right;
+    border-radius: 22px;
+    /* padding: 30px; */
+
+}
+
+
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.page-banner .image-pet {
+    border-radius: 30%;
+    width: 400px;
+    max-height: 225px;
+}
+
+.col {
+    /* margin-bottom: 20px; */
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content ; */
+    /* flex-wrap: wrap; */
+}
+
+.justify {
+    justify-content: space-evenly;
+}
+
+.white {
+    padding-top: 20px;
+    border-radius: 10%;
+    background-image: linear-gradient(135deg, #f9fafb, transparent);
+}
+
+.whites{
+    padding-top: 20px;
+    width: 450px !important;
+    height: 300px;
+    justify-content: center;
+    border-radius: 10%;
+    background-image: linear-gradient(135deg, #f9fafb, transparent);
+    
+
+}
+.legendado{
+    height: 150px;
+    width: 350px;
+    resize: none;
+
+}
+
+div.foto:hover {
+    border: 1px solid #777;
+}
+
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+/* .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+
+
+
+
+/* Lembranças */
+.fotos {
+    /* align-self: flex-end; */
+    height: 250px;
+    width: 200px;
+    /* border: 0.3px solid #eee; */
+    padding: 2px;
+    margin-bottom: 20px;
+    float: right;
+    /* border-radius: 22px; */
+    /* padding: 30px; */
+
+}
+
+.top {
+    margin-top: 100px;
+}
+
+
+.ttt {
+    font-size: small;
+}
+
+.texto {
+    width: 350px;
+}
+
+.buttom-adopt {
+    border-color: 1px solid black;
+}
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  .modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 15px 20px;
+    background: #fff;
+  }
+  .fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+  }
