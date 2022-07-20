@@ -1,0 +1,65 @@
+create database AdotaPet;
+use AdotaPet;
+CREATE TABLE `usuario` (
+id_usuario int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+nome_usuario varchar(45) NOT NULL,
+email varchar(100) NOT NULL,
+telefone varchar(20) NOT NULL,
+nascimento date NOT NULL,
+nivel_acesso int(11) NOT NULL,
+CPF varchar(14),
+CNPJ varchar(14),
+endereco varchar(100) NOT NULL,
+banco varchar(50),
+login varchar(30) NOT NULL,
+senha varchar(200) NOT NULL,
+sexo varchar(10),
+)
+
+
+CREATE TABLE `lembranca` (
+  `id_lembranca` int(11) NOT NULL AUTO_INCREMENT,
+  `id_usuario` int(11) NOT NULL,
+  `legenda_lembranca` varchar(300) DEFAULT NULL,
+  `curtida_lembranca` int(11) DEFAULT NULL,
+  `data_lembranca` date NOT NULL,
+  PRIMARY KEY (`id_lembranca`)
+
+CREATE TABLE `pet` (
+  `id_pet` int(11) NOT NULL AUTO_INCREMENT,
+  `nome_pet` varchar(45) NOT NULL,
+  `cor` varchar(20) NOT NULL,
+  `especie` varchar(20) NOT NULL,
+  `tamanho` varchar(20) NOT NULL,
+  `historia` varchar(360) NOT NULL,
+  `saude` varchar(20) NOT NULL,
+  `raca` varchar(20) NOT NULL,
+  `foto` varchar(255) NOT NULL,
+  `peso` double NOT NULL,
+  PRIMARY KEY (`id_pet`)
+
+CREATE TABLE `publicacao` (
+  `id_publicacao` int(11) NOT NULL AUTO_INCREMENT,
+  `id_pet` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
+  `legenda_publicacao` varchar(160) DEFAULT NULL,
+  `curtida_publicacao` int(11) DEFAULT NULL,
+  `estado` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id_publicacao`)
+
+CREATE TABLE `usuario` (
+  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
+  `nome_usuario` varchar(45) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `telefone` varchar(20) NOT NULL,
+  `nascimento` date NOT NULL,
+  `nivel_acesso` int(11) ,
+  `CNPJ` varchar(14),
+ `CPF` varchar(14),
+  `endereco` varchar(100),
+  `banco` varchar(50) DEFAULT NULL,
+  `pis` varchar(20) DEFAULT NULL,
+  `login` varchar(30) NOT NULL,
+  `senha` varchar(200) NOT NULL,
+  `sexo` varchar(10),
+  PRIMARY KEY (`id_usuario`)
